@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #333;
+    }
+    
+    video {
+      margin: auto 200px;
+    }
+
+    @media(max-width: 480px) {
+      video {
+        margin: 10px auto;
+        width: 100%;
+      }
+    }
+
+    @media(min-width: 481px) and (max-width: 760px) {
+      video {
+        margin: 10px auto;
+        width: 100%;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+<video controls muted width="900px" height="600px">
+  <source src="images/banner.mp4" type="video/mp4">
+  <source src="images/banner.webm" type="video/webm">
+</video>
+
+<script src="JS/video.js"></script>
+</body>
+</html>
